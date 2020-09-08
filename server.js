@@ -88,6 +88,7 @@ app.post("/api/shorturl/new", async (req, res)=>{
   }                                                                                                                                  
 })
 
+//nhap short url de chuyen huong den orginal url
 app.get("/api/shorturl/:short_url?", async (req, res)=>{
   try{
     const urlParam = await URL.findOne({
